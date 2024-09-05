@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+html{
+    height: 100%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+body{
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+.header {
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    z-index: 100;
+    padding: 0 20px;
+    background: linear-gradient(to bottom, #0e7f94 0%, #27d5c8 100%);
+}
+
+.nav {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.nav{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_logo{
+    color: rgb(255, 255, 255);
+}
+
+.nav_logo {
+    width: 50%;
+    margin-left: 5px; /* Reducir el margen izquierdo */
+    font-size: 2.5rem; /* Ajustar tamaño del logo */
+}
+span{
+    font-weight: bold;
+}
+
+.nav_item {
+    column-gap: 25px;
+}
+.nav-icons{
+    color: rgb(120, 120, 224);
+    gap: 10px;
+}
+
+.nav_link:hover {
+    color: #aaa;
+}
+    .nav_welcome{
+        font-size: 2rem;
+        color: #ffffff;
+        margin-left: 5px;
+    }
+
+/*Fin del estilo del header*/
+/*Comienzo del estilo del certificado*/
+
+.certification{
+    display: flex;
+    width: 100%;
+    padding-top: 10%;
+    background: #ffffff;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.certification-item{
+    /*#46515F*/
+    color: #0e7f94;
+    padding: 20px;
+    margin-bottom: 10px;
+    background: #ffffff;
+    border: #0e7f94 solid 1px;
+}
+
+/*Comienzo del estilo de las vacunas*/
+
+.vacunas-container{
+    padding-bottom: 20px;
+}
+.no-vacunas {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.vacunas-lista {
+    list-style-type: none;
+    padding: 0;
+    border: none;
+}
+
+.vacuna-item {
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #ffffff; /* Fondo blanco para la tabla */
+}
+
+.vacuna-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.vacuna-titulos {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #dee2e6; /* Línea gris para separar la cabecera */
+    padding-bottom: 10px; /* Espacio entre la cabecera y los detalles */
+
+}
+
+.vacuna-detalles {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-bottom: 10px;
+}
+
+.vacuna-label {
+    font-size: 0.9rem; /* Títulos pequeños */
+    font-weight: normal; /* Sin negrita */
+    color: #777373; /* Color gris claro para los títulos */
+    flex: 1;
+    text-align: center;
+}
+
+.vacuna-detail {
+    font-size: 1.1rem; /* Tamaño más grande para la información */
+    color: #000000; /* Color negro para la información */
+    flex: 1;
+    text-align: center;
+    font-weight: 300; /* Letra fina */
+}
+
+.vacuna-item:last-child .vacuna-titulos,
+.vacuna-item:last-child .vacuna-detalles {
+    margin-bottom: 0;
+}
+
+/*Fin del estilo de las tablas vacunas*/
+
+/*Comienzo del estilo del footer*/
+
+.footer {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #47515F;
+    color: #fff;
+    text-align: center;
+}
+
+.container-footer {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/*fin del estilo del footer*/

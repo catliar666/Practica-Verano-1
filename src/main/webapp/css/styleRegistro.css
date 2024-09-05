@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+body{
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: 1fr auto auto;
+}
+.header {
+    display: block;
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    z-index: 100;
+    padding: 0 20px;
+    background: linear-gradient(to bottom, #0e7f94 0%, #27d5c8 100%);
+}
+
+.nav {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.nav{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_logo{
+    color: rgb(255, 255, 255);
+}
+
+.nav_logo {
+    width: 50%;
+    margin-left: 5px; /* Reducir el margen izquierdo */
+    font-size: 2.5rem; /* Ajustar tamaño del logo */
+}
+span{
+    font-weight: bold;
+}
+
+.nav_item {
+    column-gap: 25px;
+}
+.nav-icons{
+    color: rgb(120, 120, 224);
+    gap: 10px;
+}
+
+.nav_link:hover {
+    color: #aaa;
+}
+.nav_welcome{
+    font-size: 2rem;
+    color: #ffffff;
+    margin-left: 5px;
+}
+
+/*Fin del estilo del header*/
+
+
+/*Comienzo del estilo del formulario*/
+
+
+.form-container {
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    border-radius: 8px;
+    background: linear-gradient(to bottom, #0e7f94 0%, #27d5c8 100%);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    margin: 150px auto; /* Centramos el contenedor horizontalmente y evitamos superposición con el header */
+}
+
+.form-container h3 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 15px;
+    font-style: oblique;
+}
+hr{
+    color: #ffffff;
+}
+
+.form-container .form {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.input-box label {
+    color: #ffffff;
+}
+
+.input-box :where(.input-box input, .input-box label) {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #707070;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+.input-box label {
+    border: none;
+}
+
+/*-- Inicio para quitar flechas de un input tipo number --*/
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+/*-- Fin para quitar flechas de un input tipo number --*/
+.input-box input:focus {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+}
+
+.input-submit {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #0e7f94;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.input-submit:hover {
+    background-color: #1a4851; /* Cambio de color al pasar el ratón sobre el botón */
+}
+
+.input-submit span {
+    font-weight: 500;
+}
+
+.fails{
+    color: #993333;
+    background: #dd7474;
+    padding: 0.5rem;
+    border-radius: 5%;
+}
+
+/*Comienzo del estilo del footer*/
+
+.footer {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #47515F;
+    color: #fff;
+    text-align: center;
+}
+
+.container-footer {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/*fin del estilo del footer*/

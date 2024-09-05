@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+body{
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: 1fr auto auto;
+}
+.header {
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    z-index: 100;
+    padding: 0 20px;
+    background: linear-gradient(to bottom, #0e7f94 0%, #27d5c8 100%);
+}
+
+.nav {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.nav{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_logo{
+    color: rgb(255, 255, 255);
+}
+
+.nav_logo {
+    width: 50%;
+    margin-left: 5px; /* Reducir el margen izquierdo */
+    font-size: 2.5rem; /* Ajustar tamaño del logo */
+}
+span{
+    font-weight: bold;
+}
+
+.nav_item {
+    column-gap: 25px;
+}
+.nav-icons{
+    color: rgb(120, 120, 224);
+    gap: 10px;
+}
+
+.nav_link:hover {
+    color: #aaa;
+}
+
+/*Comienzo del estilo de la seccion sobreNosotros*/
+.section_container{
+    margin: auto;
+    padding: 5rem 1rem;
+}
+
+.sobreNosotros {
+    background-color: #fff;
+    padding: 1rem;
+}
+
+.section-title{
+    width: auto;
+    display: flex;/* No se ajusta al ancho total del contenedor */
+    justify-content: center; /* Alinea el título al inicio de la sección, sobrescribiendo align-items del padre */
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: black;
+}
+
+.sobreNosotros_header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 7rem;
+}
+
+.sobreNosotros_card {
+    padding: 1rem;
+    background: linear-gradient(to bottom, #0e7f94 0%, #27d5c8 100%);
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.sobreNosotros_card:hover {
+    background: linear-gradient(to bottom, #0b6373 0%, #1ea197 100%);
+    border-color: #d2c9da;
+    cursor: pointer;
+}
+.sobreNosotros_card:hover *:not(p, img) {
+    text-decoration: underline;
+}
+
+.sobreNosotros_card h4 {
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+.sobreNosotros_card p {
+    margin-bottom: 1rem;
+    color: rgb(255, 255, 255);
+}
+
+.sobreNosotros_card a {
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+}
+/*Fin del estilo de la seccion sobreNosotros*/
+
+/*Comienzo del estilo del footer*/
+
+.footer {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #47515F;
+    color: #fff;
+    text-align: center;
+}
+
+.container-footer {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/*fin del estilo del footer*/
